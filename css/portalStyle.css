@@ -6,10 +6,22 @@ img {
 header {
     text-align: left;
     margin-bottom: 10px;
+    height: 55px;
+    clear: both;
 }
 footer {
     text-align: center;
     line-height: 1.4;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: 200;
+    font: inherit;
+    vertical-align: baseline;
+    float: left;
 }
 .headerFooter {
     background-color: darkslategray;
@@ -20,7 +32,8 @@ footer {
 }
 #name {
     font-size: 3em;
-    padding: 122px;
+    padding-left: 122px;
+    padding-right: 122px;
 }
 #bodyDiv {
     width: 800px;
