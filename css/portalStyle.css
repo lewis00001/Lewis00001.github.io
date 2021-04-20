@@ -1,0 +1,45 @@
+img {
+    position: absolute;
+    width: 175px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+header {
+    text-align: left;
+    margin-bottom: 10px;
+}
+footer {
+    text-align: center;
+    line-height: 1.4;
+}
+.headerFooter {
+    background-color: darkslategray;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1em;
+    border-radius: 8px;
+    color: beige;
+}
+#name {
+    font-size: 3em;
+    padding: 122px;
+}
+#bodyDiv {
+    width: 800px;
+    margin: block;
+    margin: auto;
+}
+#content {
+    padding: 10px;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+#byui {
+    color: beige;
+}
+#lastUpdated {
+    color: gold;
+}
+.assgnLinks {
+    color: rgb(98, 81, 209);
+}
+.assgnLinks:hover {
+    color: rgb(138, 60, 158);
+}
