@@ -1,0 +1,8 @@
+/* ----- Desktop view (60 em) -------------------------- */
+@media only screen and (min-width: 60em) {
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    } 
+}
