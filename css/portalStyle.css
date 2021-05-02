@@ -27,6 +27,21 @@ h1 {
     float: left;
 }
 
+li {
+    line-height: 1.8em;
+    max-width: 355px;
+}
+
+li:hover {
+    background-color: beige;
+}
+
+.isDone {
+    font-size: 0.9em;
+    color: darkslategray;
+    float: right;
+}
+
 .headerFooter {
     background-color: darkslategray;
     font-family: 'Times New Roman', Times, serif;
@@ -60,9 +75,11 @@ h1 {
 }
 
 .assgnLinks {
-    color: rgb(98, 81, 209);
+    color: black;
+    text-decoration: none;
 }
 
 .assgnLinks:hover {
-    color: rgb(138, 60, 158);
+    color: black;
+    font-weight: 550;
 }
