@@ -22,8 +22,50 @@ p {
     line-height: 1.4em;
 }
 
-.header {
-    margin-bottom: 20px;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+li {
+    width: 100%;
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    background-color: rgb(103, 177, 177);
+}
+
+li:hover {
+    background-color: darkslategray;
+}
+
+li a:hover {
+    color: beige;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu li a {
+    display: flex;
+    width: auto;
+    color: black;
+    text-decoration: none;
 }
 
 .footer {
