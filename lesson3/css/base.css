@@ -1,0 +1,53 @@
+/* ----- baseline view ----------------------------------- */
+* {box-sizing: border-box;}
+
+body {
+    font-family: 'Oxygen', sans-serif;
+}
+
+header, footer {
+    background-color: darkslategray;
+    text-align: center;
+    color: beige;
+    text-shadow: 1px 1px black;
+}
+
+h1 {
+    margin-top: 0;
+    padding: 10px 10px 0 10px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 14px;
+    min-height: 4em;
+    font-size: 0.85em;
+    line-height: 1.6em;
+    font-size: 16px;
+}
+
+#hrHeader {
+    width: 98%;
+    color: beige;
+} 
+
+#authorInfo {
+    padding-bottom: 10px;
+}
+
+#lastUpdated {
+    color: gold;
+}
+
+#byui {
+    color: beige;
+}
