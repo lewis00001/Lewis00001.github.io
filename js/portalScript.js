@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
             link: './lesson2/design-principles.html'
         },
         {   week: '03',
-            name: 'assignment-link',
-            link: '#'
+            name: 'Website Planning Doc',
+            link: './lesson3/index.html'
         },
         {   week: '04',
             name: 'assignment-link',
