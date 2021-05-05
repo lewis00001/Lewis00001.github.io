@@ -12,9 +12,33 @@ header, footer {
     text-shadow: 1px 1px black;
 }
 
+footer {
+    margin-top: 40px;
+    padding: 14px;
+    min-height: 4em;
+    font-size: 0.85em;
+    line-height: 1.6em;
+    font-size: 16px;
+}
+
+main {
+    max-width: 900px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+section {
+    margin-top: 25px;
+}
+
 h1 {
     margin-top: 0;
     padding: 10px 10px 0 10px;
+}
+
+h2 {
+    font-size: 20px;
 }
 
 p {
@@ -61,15 +85,6 @@ li {
 .target-link {
     background-color: rgb(89, 146, 146);
     font-weight: 550;
-}
-
-.footer {
-    margin-top: 20px;
-    padding: 14px;
-    min-height: 4em;
-    font-size: 0.85em;
-    line-height: 1.6em;
-    font-size: 16px;
 }
 
 #hrHeader {

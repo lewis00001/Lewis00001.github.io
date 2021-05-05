@@ -5,6 +5,10 @@
     }
 
     ul {
-        max-width: 1000px;
+        max-width: 900px;
+    }
+
+    main {
+        padding: 0;
     }
 }
