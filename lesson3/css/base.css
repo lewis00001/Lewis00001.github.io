@@ -22,50 +22,45 @@ p {
     line-height: 1.4em;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+    width: 100%;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    align-content: center;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 li {
-    width: 100%;
-    border-top: 1px solid white;
     display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.link-div {
+    display: flex;
+    border: 1px solid rgb(89, 146, 146);
     justify-content: center;
     padding: 8px;
     background-color: rgb(103, 177, 177);
 }
 
-li:hover {
-    background-color: darkslategray;
+.link-div:hover {
+    background-color: rgb(89, 146, 146);
+    font-weight: 550;
 }
 
-li a:hover {
-    color: beige;
-}
-
-nav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.menu {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.menu li a {
-    display: flex;
-    width: auto;
-    color: black;
-    text-decoration: none;
+.home-link, 
+.color-link, 
+.typo-link, 
+.target-link {
+    background-color: rgb(89, 146, 146);
+    font-weight: 550;
 }
 
 .footer {
