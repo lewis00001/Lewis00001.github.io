@@ -11,4 +11,8 @@
     main {
         padding: 0;
     }
+
+    #domain-image {
+        display: block;
+    }
 }

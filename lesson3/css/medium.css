@@ -15,4 +15,11 @@
         justify-content: center;
         background-color: rgb(103, 177, 177);
     }
+
+    #color-img {
+        object-fit: cover;
+        margin-top: 30px;
+        width: 100%;
+        display: block;
+    }
 }
