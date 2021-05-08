@@ -99,6 +99,10 @@ li {
     border: 1px solid black;
 }
 
+.bold {
+    font-weight: 600;
+}
+
 .hex {
     width: 80px;
     font-weight: 600;
