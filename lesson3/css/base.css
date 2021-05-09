@@ -82,7 +82,7 @@ li {
 
 .link-div:hover {
     background-color: rgb(89, 146, 146);
-    font-weight: 550;
+    font-weight: 600;
 }
 
 .home-link, 
@@ -90,7 +90,7 @@ li {
 .typo-link, 
 .target-link {
     background-color: rgb(89, 146, 146);
-    font-weight: 550;
+    font-weight: 600;
 }
 
 .color-li {
