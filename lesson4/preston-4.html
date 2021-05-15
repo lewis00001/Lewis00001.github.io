@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta >
+        <title>Preston, ID :: Weatherlicious</title>
+        <meta name="description" content="The town page for Preston, ID">
+        <meta name="author" content="E. Lewis Lockhart">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/medium.css">
+        <link rel="stylesheet" href="./css/large.css">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favIcon.png">
+
+        <script src="./js/currentYear.js"></script>
+        <script src="./js/lastUpdated.js"></script>
+        <script src="./js/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="h-logo">
+                <img src="./images/logo.png" alt="weatherlicious logo">
+            </div>
+            <div id="h-text">
+                <h1 id="header-text">Weatherlicious</h1>
+                <div id="tag-line">Where Your Eye Stops to Spy for Raindrops</div>
+            </div>
+        </header>
+        <nav>
+            <ul class="full-width navigation">
+                <li class="nav-li"><a href="#" onclick="toggleMenu()">
+                    <span class="button">&#9776; MENU</span></a></li>
+                <li class="nav-li active"><a href="#">Preston</a></li>
+                <li class="nav-li"><a href="#">Soda Springs</a></li>
+                <li class="nav-li"><a href="#">Fish Haven</a></li>
+                <li class="nav-li"><a href="#">Storm Center</a></li>
+                <li class="nav-li"><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+        <section class="full-width">
+            <main>
+                <h2 class="page-title">Preston Idaho</h2>
+                <section class="inner-section">Hero w/ weather summary</section>
+                <section class="inner-section">5 Day Forcase</section>
+                <section class="inner-section">Article</section>
+                <section class="inner-section">Contact Information</section>
+            </main>
+        </section>
+        <footer>
+            © <span id="current-year"></span> | E. Lewis Lockhart | Utah <br>
+            <a id="byui" href="https://www.byui.edu/online" target="_blank">BYUi Online Learning</a><br>
+            <span id="last-updated"></span>
+        </footer> 
+    </body>
+</html>
