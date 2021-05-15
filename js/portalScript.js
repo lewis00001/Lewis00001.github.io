@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
             link: './lesson3/index.html'
         },
         {   week: '04',
-            name: 'assignment-link',
-            link: '#'
+            name: 'Preston, ID Page',
+            link: './lesson4/preston-4.html'
         },
         {   week: '05',
             name: 'assignment-link',
