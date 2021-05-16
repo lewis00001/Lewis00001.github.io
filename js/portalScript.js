@@ -13,7 +13,11 @@ document.addEventListener('DOMContentLoaded', function() {
             name: 'Preston, ID Page',
             link: './lesson4/preston-4.html'
         },
-        {   week: '05',
+        {   week: '05.1',
+            name: 'BOM - Top 25',
+            link: './lesson5bom/bom.html'
+        },
+        {   week: '05.2',
             name: 'assignment-link',
             link: '#'
         },
