@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Preston, ID :: Weatherlicious</title>
+        <meta name="description" content="The town page for Preston, ID">
+        <meta name="author" content="E. Lewis Lockhart">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/medium.css">
+        <link rel="stylesheet" href="./css/large.css">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <!-- <link rel="icon" type="image/png" sizes="16x16" href="./images/favIcon.png"> -->
+        <link rel="shortcut icon" href="./images/favicon.ico">
+
+        <script src="./js/currentYear.js"></script>
+        <script src="./js/lastUpdated.js"></script>
+        <script src="./js/script.js"></script>
+    </head>
+    <body>
+        <div class="banner hidden">
+            Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+        </div>
+        <header>
+            <div id="h-logo">
+                <img src="./images/logo.png" alt="weatherlicious logo">
+            </div>
+            <div id="h-text">
+                <h1 id="header-text">Weatherlicious</h1>
+                <div id="tag-line">Where Your Eye Stops to Spy for Raindrops</div>
+            </div>
+        </header>
+        <nav>
+            <ul class="full-width navigation">
+                <li class="nav-li"><a href="#" onclick="toggleMenu()">
+                    <span class="button">&#9776; MENU</span></a></li>
+                <li class="nav-li"><a href="#">Home</a></li>
+                <li class="nav-li active"><a href="#">Preston</a></li>
+                <li class="nav-li"><a href="#">Soda Springs</a></li>
+                <li class="nav-li"><a href="#">Fish Haven</a></li>
+                <li class="nav-li"><a href="#">Storm Center</a></li>
+                <li class="nav-li"><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+        <main class="full-width">
+
+            <h2 class="page-title">Preston Idaho</h2>
+            
+            <section class="hero-img">
+                <img src="./images/preston.jpg" alt="a bland field near Preston, Id" id="preston-hero">
+                <div class="weather-summary">
+                    <h3 class="ws-h3">Weather Summary</h3>
+                    <table class="ws-table">
+                        <tr>
+                            <td class="title-data">Currently: </td><td class="sum-data">Sunny</td>
+                        </tr>
+                        <tr>
+                            <td class="title-data">High: </td><td class="sum-data">96 *F</td>
+                        </tr>
+                        <tr>
+                            <td class="title-data">Wind Chill: </td><td class="sum-data">92 *F</td>
+                        </tr>
+                        <tr>
+                            <td class="title-data">Humidity: </td><td class="sum-data">22%</td>
+                        </tr>
+                        <tr>
+                            <td class="title-data">Wind Speed: </td><td class="sum-data">17 mph</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section class="forcast">
+                <h2>5 Day Forecast</h2>
+                <table class="forecast-table">
+                    <tr>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                        <th>Sunday</th>
+                    </tr>
+                    <tr>
+                        <td class="forecast-info">
+                            <img src="../weather-icons/day.svg" alt="weather icon" class="w-icon">
+                            <span>80 *F</span>
+                        </td>
+                        <td class="forecast-info">
+                            <img src="../weather-icons/cloudy-day-2.svg" alt="weather icon" class="w-icon">
+                            <span>84 *F</span>
+                        </td>
+                        <td class="forecast-info">
+                            <img src="../weather-icons/rainy-2.svg" alt="weather icon" class="w-icon">
+                            <span>72 *F</span>
+                        </td>
+                        <td class="forecast-info">
+                            <img src="../weather-icons/thunder.svg" alt="weather icon" class="w-icon">
+                            <span>68 *F</span>
+                        </td>
+                        <td class="forecast-info">
+                            <img src="../weather-icons/cloudy-day-3.svg" alt="weather icon" class="w-icon">
+                            <span>73 *F</span>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="article-sec">
+                <img src="./images/pexels-alex-green-5693380.jpg" alt="family knitting together" class="article-img">
+                <h2>Knitting Hearts Together</h2>
+                <h6>by Megan A. Wirsch</h6>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis ab dolorum sint, 
+                    autem, a necessitatibus provident, doloremque nulla vero sequi possimus dolores inventore. 
+                    Voluptates distinctio, quae officia at voluptas sed? Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Nihil atque incidunt sit maiores eius velit laudantium porro id, commodi 
+                    nulla, quam fugiat ut nesciunt modi tenetur rem nemo culpa ratione?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis ab dolorum sint, 
+                    autem, a necessitatibus provident, doloremque nulla vero sequi possimus dolores inventore. 
+                    Voluptates distinctio, quae officia at voluptas sed? Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Nihil atque incidunt sit maiores eius velit laudantium porro id, commodi 
+                    nulla, quam fugiat ut nesciunt modi tenetur rem nemo culpa ratione?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis ab dolorum sint, 
+                    autem, a necessitatibus provident, doloremque nulla vero sequi possimus dolores inventore. 
+                    Voluptates distinctio, quae officia at voluptas sed? Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Nihil atque incidunt sit maiores eius velit laudantium porro id, commodi 
+                    nulla, quam fugiat ut nesciunt modi tenetur rem nemo culpa ratione?
+                </p>
+            </section>
+
+            <section class="address-sec">
+                <div class="map">
+                    <img src="./images/map.png" alt="address map" class="map-img">
+                </div>
+                <div class="contact">
+                    <div class="address">
+                        <h2>Weatherlicious</h2>
+                        <p>Zhongshan East 1st Rd,</p>
+                        <p>Waitan, Hongkou District,</p>
+                        <p>Shanghai, China</p>
+                    </div>
+                    <br>
+                    <div class=phone-email>
+                        801.223.1091 <br>
+                        lewis@weather.com
+                    </div>
+                    <br>
+                    <div class="social">
+                        icons
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            © <span id="current-year"></span> | E. Lewis Lockhart | Utah <br>
+            <a id="byui" href="https://www.byui.edu/online" target="_blank">BYUi Online Learning</a><br>
+            <span id="last-updated"></span>
+        </footer> 
+    </body>
+</html>

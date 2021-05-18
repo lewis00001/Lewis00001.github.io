@@ -1,0 +1,61 @@
+/* ----- tablet view (36 em) -------------------------- */
+@media only screen and (min-width: 36em) {
+    :root {
+        --h-text: 'Merriweather', serif;
+        --t-text: 'Source Sans Pro', sans-serif;
+        --text-color: #01161E;
+        --accent-blue-1: #124559;
+        --accent-blue-2: #598392;
+        --accent-blue-3: rgba(7, 27, 35, 0.7);
+        --bg-1: #AEC3B0;
+        --bg-2: #EFF6E0;
+    }
+
+    th {
+        font-family: var(--t-text);
+        font-size: 16px;
+        background-color: var(--accent-blue-1);
+        color: var(--bg-2);
+        padding: 5px;
+    }
+
+    .forcast {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        display: block;
+        text-align: center;
+    }
+
+    .weather-summary {
+        position: absolute;
+        width: 200px;
+        top: 20px;
+        left: 20px;
+        margin-top: 0;
+        background-color: var(--accent-blue-3);
+    }
+
+    .forecast-table {
+        margin: 0 auto;
+        margin-top: 8px;
+        width: 500px;
+        border: 1px solid var(--accent-blue-2);
+    }
+
+    .forecast-info span {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 8px;
+    }
+
+    .map {
+        min-width: 50%;
+    }
+
+    .map-img {
+        display: block;
+        padding: 10px;
+        width: 100%;
+    }
+}
