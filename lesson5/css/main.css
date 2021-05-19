@@ -173,13 +173,16 @@ th {
     margin-top: 15px;
     padding: 10px;
     background-color: var(--accent-blue-2);
+    z-index: 2;
 }
 
 .article-sec {
     width: 100%;
-    padding: 20px;
+    padding: 0 20px 0 20px;
     background-color: var(--bg-2);
+    margin: 0 auto;
     margin-top: 25px;
+    border-left: 5px solid var(--accent-blue-1);
 }
 
 .article-sec img {
@@ -205,6 +208,8 @@ th {
 
 .address-sec {
     display: flex;
+    min-height: 230px;
+    padding: 10px;
     margin-top: 35px;
     margin-bottom: 0;
     background-color: var(--accent-blue-1);
@@ -213,13 +218,37 @@ th {
 
 .contact {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
+}
+
+.contact-inner {
+    width: 180px;
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+.social {
+    font-size: 22px;
 }
 
 .address h2 {
     margin-bottom: 4px;
+}
+
+.quill {
+    width: 100%;
+    padding: 20px 0 20px 0;
+    color: var(--accent-blue-1);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.quill-q {
+    text-align: center;
+}
+
+.quill-hide {
+    display: none;
 }
 
 #tag-line {

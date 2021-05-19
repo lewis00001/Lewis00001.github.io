@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
             link: './lesson5bom/bom.html'
         },
         {   week: '05.2',
-            name: 'assignment-link',
-            link: '#'
+            name: 'Preston Id Page',
+            link: './lesson5/preston-5.html'
         },
         {   week: '06',
             name: 'assignment-link',
