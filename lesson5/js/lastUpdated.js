@@ -5,10 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
     let dayOptions = {
         weekday: 'long',
         year: 'numeric',
-        month: 'long',
-        day: 'numeric' 
+        day: 'numeric' ,
+        month: 'long'
     };
-    let todaysDate = getDate.toLocaleDateString(undefined, dayOptions);
+    
+    let todaysDate = getDate.toLocaleDateString('en-GB', dayOptions);
 
     // calls the pancake banner if the day is Friday
     if (todaysDate.split(',')[0] == 'Friday') {
@@ -18,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     // update the last modified date and time
-    document.querySelector('#last-updated').textContent = 'Last Modified: ' + todaysDate;   
+    document.querySelector('#last-updated').textContent = todaysDate;   
 }, false); 
 
 // allows the banner to display on Fridays
