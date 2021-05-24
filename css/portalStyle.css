@@ -54,14 +54,14 @@ li:hover > a > span {
 
 .headerFooter {
     background-color: darkslategray;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Zilla Slab', Times, serif;
     padding: 1em;
     border-radius: 8px;
     color: beige;
 }
 
 #name {
-    font-size: 3em;
+    font-size: 2.8em;
     padding-left: 122px;
     padding-right: 122px;
 }

@@ -18,12 +18,12 @@ button.addEventListener('click', function() {
         ' Please remove one beefore adding another item.');
     // creates and adds new li
     } else {
-        // creates elments to add to the list
+        // creates elements to add to the list
         const liNew = document.createElement('li');
         const btnNew = document.createElement('button');
         // add class for styling later
         btnNew.className = 'delete-btn';
-        // set values of elments
+        // set values of elements
         liNew.textContent = value;
         btnNew.textContent = 'X';
         // add elements to the page
