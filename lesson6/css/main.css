@@ -113,10 +113,6 @@ th {
     margin: 0 auto;
 }
 
-.hidden {
-    display: none;
-}
-
 .banner {
     width: 100%;
     background-color: var(--accent-blue-2);
@@ -250,6 +246,86 @@ th {
     display: none;
 }
 
+.modal {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    z-index: 99;
+}
+
+.modal-inner {
+    margin: 80px auto auto auto;
+    background-color: var(--accent-blue-1);
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 30px;
+    border-radius: 8px;
+}
+
+.modal-title {
+    width: 300px;
+    text-align: center;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.close-modal {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.close-modal i {
+    padding: 15px 20px 10px 10px;
+    cursor: pointer;
+    
+}
+
+.modal-title {
+    padding: 0 10px 25px 10px;
+    width: 100%;
+    letter-spacing: 0.1em;
+    font-size: 14px;
+    line-height: 1.4em;
+    font-family: var(--h-text);
+    font-size: 20px;
+}
+
+.description-text {
+    font-family: var(--t-text);
+    letter-spacing: 0.1em;
+    padding: 0 20px 0 20px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.green {
+    color: lightgreen;
+}
+
+.red {
+    color: rgb(245, 90, 90);
+}
+
+#modal-name-input {
+    padding: 8px;
+    margin: 25px auto;
+}
+
 #tag-line {
     font-family: var(--t-text);
     display: flex;
@@ -288,3 +364,33 @@ th {
     color: var(--text-color);
 }
 
+#personalize {
+    color: var(--accent-blue-2);
+    font-size: 30px;
+    float: right;
+    padding: 12px;
+}
+
+#personalize:hover {
+    color: var(--accent-blue-1);
+    cursor: pointer;
+}
+
+#modal-close-text {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#modal-name-submit {
+    padding: 8px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    font-family: var(--t-text);
+}
+
+#modal-feedback {
+    text-align: center;
+    margin-top: 10px;
+}

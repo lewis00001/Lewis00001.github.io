@@ -19,6 +19,26 @@
             crossorigin="anonymous">
     </head>
     <body>
+        <div class="modal hidden">
+            <div class="modal-inner">
+                <div class="close-modal">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="modal-content">
+                    <div class="modal-title">
+                        Personalize Your Experience
+                    </div>
+                    <div class="description-text">
+                        Please enter your name for a more personal experience.
+                    </div>
+                    <div id="modal-feedback"></div>
+                    <input type="text" id="modal-name-input">
+                    <button id="modal-name-submit" onclick="addNameLocal()">Submit</button>
+                </div>
+                <div class="close-modal" id="modal-close-text">close</div>
+            </div>
+        </div>
+
         <div class="banner hidden">
             Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
         </div>
@@ -30,7 +50,11 @@
                 <h1 id="header-text">Weatherlicious</h1>
                 <div id="tag-line">Where Your Eye Stops to Spy for Raindrops</div>
             </div>
+            <div id="personalize" onclick="triggerModal()">
+                <i class="fas fa-user-circle"></i>
+            </div>
         </header>
+        <div class="welcome-banner banner hidden"></div>
         <nav>
             <ul class="full-width navigation">
                 <li class="nav-li"><a href="#" onclick="toggleMenu()">
@@ -51,7 +75,7 @@
                 <picture>
                     <source media="(min-width: 650px)" srcset="./images/hero-large.jpg">
                     <source media="(min-width: 420px)" srcset="./images/hero-medium.jpg">
-                    <img src="./images/hero-small.jpg" alt="sample image for lesson 6" id="preston-hero">
+                    <img src="./images/hero-small.jpg" alt="sample image for lesson 6">
                 </picture>
                 <!-- <img src="./images/preston.jpg" alt="a bland field near Preston, Id" id="preston-hero"> -->
                 <div class="weather-summary">
@@ -193,5 +217,6 @@
         <script src="./js/script.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script src="./js/webFontLoad.js"></script>
+        <script src="./js/modal.js"></script>
     </body>
 </html>

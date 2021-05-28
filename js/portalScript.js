@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
             link: './lesson5/preston-5.html'
         },
         {   week: '06',
-            name: 'assignment-link',
-            link: '#'
+            name: 'Preston Id, still',
+            link: './lesson6/preston-6.html'
         },
         {   week: '07',
             name: 'assignment-link',

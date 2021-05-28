@@ -16,8 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
         (0.4275 * temp * Math.pow(windSpeed, 0.16)));
     }
 
-    console.log(windChill);
-
     // output the windchill result
     document.querySelector('#d-wind-c').textContent = windChill;
 
