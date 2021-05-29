@@ -53,10 +53,10 @@
         min-width: 50%;
     }
 
-    .map-img {
+    .map iframe {
         display: block;
-        width: 100%;
     }
+    
 
     .quill-hide {
         display: block;

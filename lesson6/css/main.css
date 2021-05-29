@@ -197,7 +197,7 @@ th {
     font-family: var(--t-text);
 }
 
-.map-img {
+.map iframe {
     display: none;
 }
 
