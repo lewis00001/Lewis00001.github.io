@@ -369,6 +369,7 @@ th {
     font-size: 30px;
     float: right;
     padding: 12px;
+    position: relative;
 }
 
 #personalize:hover {

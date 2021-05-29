@@ -45,6 +45,11 @@
         display: block;
     }
 
+    #personalize {
+        position: absolute;
+        right: 0px;
+    }
+
     #header-text {
         display: block;
     }
