@@ -14,7 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
          'we hope you have sunshine',
          'you are the best',
          'some clouds look like puppies',
-         'it\'s ok to dance in the rain'
+         'it\'s ok to dance in the rain',
+         'stay dry and stay safe',
+         'you\'re a real gem'
      ];
     let b = document.getElementsByClassName('welcome-banner')[0];
     // check to see if there is a name in local memory
