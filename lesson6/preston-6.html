@@ -45,7 +45,10 @@
 
         <header>
             <div id="h-logo">
-                <img src="./images/logo.png" alt="weatherlicious logo">
+                <picture>
+                    <source media="(min-width: 760px)" srcset="./images/logo200px.png">
+                    <img src="./images/logo300px.png" alt="weatherlicious logo">
+                </picture>
             </div>
             <div id="h-text">
                 <h1 id="header-text">Weatherlicious</h1>
@@ -55,7 +58,7 @@
                 <i class="fas fa-user-circle"></i>
             </div>
         </header>
-        
+
         <div class="welcome-banner banner hidden"></div>
         <nav>
             <ul class="full-width navigation">
