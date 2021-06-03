@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(37,36,43);
+    background: linear-gradient(232deg, rgba(37,36,43,1) 0%, rgba(46,46,91,1) 50%, rgba(37,36,43,1) 100%);
+}
+
+h1 {
+    font-size: 30px;
+    color: #999;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 30px;
+}
+
+picture {
+    width: 300px;
+    height: 400px;
+    background-color: #000;
+    margin: 20px;
+}
+
+img {
+    filter: drop-shadow(0 0 0.55rem #000);
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 4s;
+}
+
+
+
+
+
