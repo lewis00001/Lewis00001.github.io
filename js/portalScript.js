@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
             link: './lesson7lazy/lazyload.html'
         },
         {   week: '07.2',
-            name: 'assignment-link',
-            link: '#'
+            name: 'Gallery Page',
+            link: './lesson7/gallery7.html'
         },
         {   week: '08',
             name: 'assignment-link',
