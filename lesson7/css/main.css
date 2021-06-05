@@ -350,6 +350,11 @@ th {
     justify-content: space-evenly;
 }
 
+.gallery-image picture a img {
+    width: 300px;
+    height: 300px;
+}
+
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
