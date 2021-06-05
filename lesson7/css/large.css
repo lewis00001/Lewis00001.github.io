@@ -31,6 +31,12 @@
         text-align: center;
     }
 
+    .gallery-image:hover {
+        margin: 5px;
+        filter: drop-shadow(0 0 0.3rem #000);
+        background-color: #fff;
+    }
+
     .article-sec img {
         width: 425px;
         float: right;
