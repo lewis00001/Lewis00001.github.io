@@ -33,7 +33,11 @@ document.addEventListener('DOMContentLoaded', function() {
             name: 'Gallery Page',
             link: './lesson7/gallery7.html'
         },
-        {   week: '08',
+        {   week: '08.1',
+            name: 'TableBuild',
+            link: './lesson8tb/tablebuild.html'
+        },
+        {   week: '08.2',
             name: 'assignment-link',
             link: '#'
         },
