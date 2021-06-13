@@ -35,14 +35,3 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
 images.forEach(image => {
     imgObserver.observe(image);
 });
-
-// update stormcenter range number when adjusted
-let elem = document.querySelector('input[type="range"]');
-
-let rangeValue = function(){
-  let newValue = elem.value;
-  let target = document.querySelector('#storm-r-value');
-  target.innerHTML = newValue;
-}
-
-elem.addEventListener("input", rangeValue);

@@ -136,8 +136,8 @@ th {
 
 .banner {
     width: 100%;
-    background-color: var(--accent-blue-2);
-    color: var(--bg-2);
+    background-color: var(--accent-blue-1);
+    color: white;
     font-family: var(--t-text);
     padding: 8px;
     text-align: center;
