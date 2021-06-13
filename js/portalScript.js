@@ -38,8 +38,8 @@ document.addEventListener('DOMContentLoaded', function() {
             link: './lesson8tb/tablebuild.html'
         },
         {   week: '08.2',
-            name: 'assignment-link',
-            link: '#'
+            name: 'Storm Center',
+            link: './lesson8/stormcenter.html'
         },
         {   week: '09',
             name: 'assignment-link',
