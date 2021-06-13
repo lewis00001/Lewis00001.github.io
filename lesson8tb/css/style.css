@@ -3,6 +3,7 @@ table {
     max-width: 600px;
     margin: 0 auto;
     font-family: 'Ubuntu', sans-serif;
+    filter: drop-shadow(15px 15px 10px #628ca6);
 }
 
 table, th, td {
@@ -33,6 +34,10 @@ tr:nth-child(even) {
 
 tr:nth-child(odd) {
     background: #e7ffed;
+}
+
+tr:nth-child(6) td:first-child {
+    font-style: italic;
 }
 
 thead tr td, tfoot tr td {
