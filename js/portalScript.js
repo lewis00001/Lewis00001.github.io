@@ -41,9 +41,9 @@ document.addEventListener('DOMContentLoaded', function() {
             name: 'Storm Center',
             link: './lesson8/stormcenter.html'
         },
-        {   week: '09',
-            name: 'assignment-link',
-            link: '#'
+        {   week: '09.1',
+            name: 'Latter-day Prophets',
+            link: './lesson9prophet/prophet.html'
         },
         {   week: '10',
             name: 'assignment-link',
