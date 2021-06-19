@@ -444,6 +444,50 @@ th {
     font-family: var(--t-text);
 }
 
+.home-artical {
+    background-color: var(--bg-2);
+    padding: 10px;
+}
+
+.home-main-h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.home-artical h2 {
+    margin-top: 16px;
+}
+
+.home-artical-div {
+    line-height: 1.2em;
+    margin-top: 20px;
+}
+
+.home-news {
+    height: 400px;
+    overflow: auto;
+}
+
+.home-headline {
+    font-family: var(--h-text);
+    background-color: var(--bg-1);
+    padding: 12px;
+    font-size: 14px;
+}
+
+.home-p {
+    font-family: var(--t-text);
+    padding: 12px;
+    background-color: white;
+}
+
+.home-artical-url {
+    text-decoration: none;
+    font-weight: 700;
+    padding-left: 8px;
+    color: var(--accent-blue-2);
+}
+
 #storm-r-value {
     text-align: center;
     font-weight: 800;

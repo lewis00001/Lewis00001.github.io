@@ -78,6 +78,50 @@
         <main class="full-width">
             <h2 class="page-title">Home</h2>
 
+            <section class="hero-img">
+                <picture>
+                    <source media="(min-width: 650px)" srcset="./images/hero-large.jpg">
+                    <source media="(min-width: 420px)" srcset="./images/hero-medium.jpg">
+                    <img src="./images/hero-small.jpg" alt="sample image for lesson 6">
+                </picture>
+            </section>
+
+            <section class="home-artical">
+                <h2 class="home-main-h2">News Articals</h2>
+                <div class="home-news"></div>
+            </section>
+
+            <section class="home-towns"></section>
+
+            <section class="address-sec">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.3409672128114!2d121.48777255042269!3d31.23898308137265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b27057eca10f61%3A0x72e78840c83d675!2sNan%20Jing%20Dong%20Lu%20%26%20Zhong%20Shan%20Dong%20Yi%20Lu%2C%20Nan%20Jing%20Dong%20Lu%2C%20Huangpu%20Qu%2C%20Shanghai%20Shi%2C%20China!5e0!3m2!1sen!2sus!4v1622315709127!5m2!1sen!2sus" 
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="contact">
+                    <div class="contact-inner">
+                        <div class="address">
+                            <h2>Weatherlicious</h2>
+                            <p><i class="fas fa-map-marker-alt"></i> Zhongshan East 1st Rd,</p>
+                            <p>Waitan, Hongkou District,</p>
+                            <p>Shanghai, China</p>
+                        </div>
+                        <br>
+                        <div class=phone-email>
+                            <i class="fas fa-phone-square-alt"></i> 801.223.1091
+                            <br>
+                            <i class="fas fa-envelope-open-text"></i> lewis@weather.com
+                        </div>
+                        <br>
+                        <div class="social">
+                            <i class="fab fa-twitter-square"></i>
+                            <i class="fab fa-facebook-square"></i>
+                            <i class="fab fa-pinterest-square"></i>
+                            <i class="fab fa-instagram-square"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
             
         </main>
 
@@ -93,5 +137,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script src="./js/webFontLoad.js"></script>
         <script src="./js/modal.js" defer></script>
+        <script src="./js/newsApi.js" defer></script>
     </body>
 </html>
