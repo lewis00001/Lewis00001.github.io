@@ -1,0 +1,21 @@
+.wire {
+    width: 100%;
+}
+
+.wire img {
+    display: block;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 20px;
+    filter: drop-shadow(0px 0px 10px #222);
+}
+
+.wire h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.wire-bottom {
+    margin-bottom: 35px;
+}

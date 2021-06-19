@@ -29,8 +29,7 @@ p {
     margin-top: 6px;
 }
 
-h1,
-h2 {
+h1, h2 {
     color: rgb(0, 0, 150);
     text-align: center;
 }

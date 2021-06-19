@@ -1,15 +1,15 @@
 // wait for the page to load then make changes
 document.addEventListener('DOMContentLoaded', function() {
     let assign = [
-        {   week: '02',
+        {   week: '02.0',
             name: 'Design Principles',
             link: './lesson2/design-principles.html'
         },
-        {   week: '03',
+        {   week: '03.0',
             name: 'Website Planning Doc',
             link: './lesson3/index.html'
         },
-        {   week: '04',
+        {   week: '04.0',
             name: 'Preston, ID Page',
             link: './lesson4/preston-4.html'
         },
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
             name: 'Preston Id Page',
             link: './lesson5/preston-5.html'
         },
-        {   week: '06',
+        {   week: '06.0',
             name: 'Preston Id, still',
             link: './lesson6/preston-6.html'
         },
@@ -45,19 +45,27 @@ document.addEventListener('DOMContentLoaded', function() {
             name: 'Latter-day Prophets',
             link: './lesson9prophet/prophet.html'
         },
-        {   week: '10',
+        {   week: '09.2',
+            name: 'Wireframes',
+            link: './lesson9/home-wireframes.html'
+        },
+        {   week: '09.3',
+            name: 'Weather Home Page',
+            link: '#'
+        },
+        {   week: '10.0',
             name: 'assignment-link',
             link: '#'
         },
-        {   week: '11',
+        {   week: '11.0',
             name: 'assignment-link',
             link: '#'
         },
-        {   week: '12',
+        {   week: '12.0',
             name: 'assignment-link',
             link: '#'
         },
-        {   week: '13',
+        {   week: '13.0',
             name: 'assignment-link',
             link: '#'
         }
