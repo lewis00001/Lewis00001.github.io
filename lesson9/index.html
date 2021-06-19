@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Storm Center :: Weatherlicious</title>
-        <meta name="description" content="The purpose of this page is for the user to report a storm or unusual weather event.">
+        <title>Home :: Weatherlicious</title>
+        <meta name="description" content="Home page for the Weatherlicious website.">
         <meta name="author" content="E. Lewis Lockhart">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -66,11 +66,11 @@
             <ul class="full-width navigation">
                 <li class="nav-li"><a href="#" onclick="toggleMenu()">
                     <span class="button">&#9776; MENU</span></a></li>
-                <li class="nav-li"><a href="#">Home</a></li>
+                <li class="nav-li active"><a href="#">Home</a></li>
                 <li class="nav-li"><a href="../lesson6/preston-6.html">Preston</a></li>
                 <li class="nav-li"><a href="#">Soda Springs</a></li>
                 <li class="nav-li"><a href="#">Fish Haven</a></li>
-                <li class="nav-li active"><a href="#">Storm Center</a></li>
+                <li class="nav-li"><a href="../lesson8/stormcenter.html">Storm Center</a></li>
                 <li class="nav-li"><a href="../lesson7/gallery7.html">Gallery</a></li>
             </ul>
         </nav>
@@ -78,87 +78,7 @@
         <main class="full-width">
             <h2 class="page-title">Home</h2>
 
-            <form name="storm-form" class="storm-form" action="thankyou.html">
-                <div class="input-section">
-                    <label for="full-name">Full Name</label>
-                    <input pattern="(.*[A-Za-z]){5}" type="text" name="fullName" id="full-name" placeholder="full name" required>
-                </div>
-
-                <div class="input-section">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="email@address.com" minlength="3" maxlength="64" required>
-                </div>
-
-                <div class="input-section">
-                    <label for="phone-number">Phone Number</label>
-                    <input type="tel"  name="phoneNumber" id="phone-number" placeholder="000-000-0000" required>
-                </div>
-
-                <div class="input-section">
-                    <label for="zip-code">Zip Code</label>
-                    <input type="number" id="zip-code" placeholder="00000" required>
-                </div>
-
-                <div class="input-section">
-                    <label for="storm-date">Storm Date</label>
-                    <input type="date" name="stormDate" id="storm-date" value="">
-                </div>
-
-                <div class="input-section">
-                    <label for="storm">Storm Type</label>
-                        <input type="text" list="storm-type" name="storm" id="storm" placeholder="select one ...">
-                        <datalist id="storm-type">
-                            <option value="Flash Flood">
-                            <option value="Hail">
-                            <option value="Hurricane">
-                            <option value="Thunder Storm">
-                            <option value="Tornado">
-                            <option value="Sharknado"></option>
-                        </datalist>
-                </div>
-
-                <div class="input-section">
-                        <label for="storm-r" id="storm-r-label">Storm Severity</label>
-                        <input type="range" name="storm-r" id="storm-r" step="0.5" min="0" max="10">       
-                        <span id="storm-r-value">5</span>
-                </div>
-
-                <div class="input-section">
-                    <label for="storm-region">Storm Region</label>
-                    <select name="stormRegion" id="storm-region">
-                        <option selected="selected" disabled>Select Region ...</option>
-                        <option value="preston">Preston</option>
-                        <option value="soda-springs">Soda Springs</option>
-                        <option value="fish-haven">Fish Haven</option>
-                    </select>
-                </div>
-
-                <fieldset class="input-section fs-sec">
-                    <legend>User In-Danger</legend>
-                    <div class="radio">
-                        <input type="radio" name="danger" value="yes" id="yes" class="radio-btn">
-                        <label for="yes">Yes</label>
-                    </div>
-
-                    <div class="radio">
-                        <input type="radio" name="danger" value="maybe" id="maybe" class="radio-btn">
-                        <label for="maybe">Maybe</label>
-                    </div>
-
-                    <div class="radio">
-                        <input type="radio" name="danger" value="no" id="no" class="radio-btn">
-                        <label for="no">No</label>
-                    </div>
-                </fieldset>
-
-                <div class="input-section">
-                    <label for="comments">Additional Information:</label><br>
-                    <textarea name="comments" id="comments"></textarea>
-                </div>
-                <div class="input-section">
-                    <input type="submit" value="Submit" class="submit submit-div">
-                </div>
-            </form>
+            
         </main>
 
         <footer class="full-width">
@@ -173,6 +93,5 @@
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script src="./js/webFontLoad.js"></script>
         <script src="./js/modal.js" defer></script>
-        <script src="./js/stormCenter.js"></script>
     </body>
 </html>

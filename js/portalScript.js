@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {   week: '09.3',
             name: 'Weather Home Page',
-            link: '#'
+            link: './lesson9/index.html'
         },
         {   week: '10.0',
             name: 'assignment-link',
