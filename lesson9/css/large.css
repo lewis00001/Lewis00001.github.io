@@ -51,6 +51,25 @@
         display: block;
     }
 
+    .home-towns {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .town-div {
+        flex-direction: column;
+        width: 32%;
+    }
+
+    .town-div:nth-child(odd) {
+        flex-direction: column;
+    }
+    
+    .town-div img {
+        padding-top: 15px;
+    }
+
     #personalize {
         position: absolute;
         right: 0px;

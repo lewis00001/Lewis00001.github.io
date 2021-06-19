@@ -94,6 +94,22 @@
         margin-bottom: 25px;
     }
 
+    .town-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .town-div:nth-child(odd) {
+        flex-direction: row-reverse;
+    } 
+
+    .town-div img {
+        padding: 0;
+        filter: drop-shadow(0 0 0 #000);
+    }
+
     #storm-r-value {
         width: 40px;
     }

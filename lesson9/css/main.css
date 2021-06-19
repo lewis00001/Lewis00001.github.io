@@ -444,9 +444,10 @@ th {
     font-family: var(--t-text);
 }
 
-.home-artical {
+.home-article {
     background-color: var(--bg-2);
     padding: 10px;
+    margin-bottom: 30px;
 }
 
 .home-main-h2 {
@@ -454,11 +455,11 @@ th {
     text-align: center;
 }
 
-.home-artical h2 {
+.home-article h2 {
     margin-top: 16px;
 }
 
-.home-artical-div {
+.home-article-div {
     line-height: 1.2em;
     margin-top: 20px;
 }
@@ -481,11 +482,56 @@ th {
     background-color: white;
 }
 
-.home-artical-url {
+.home-article-url {
     text-decoration: none;
     font-weight: 700;
     padding-left: 8px;
     color: var(--accent-blue-2);
+}
+
+.town-div {
+    border: 2px solid var(--accent-blue-1);
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.town-img {
+    width: 100%;
+    max-width: 350px;
+    padding: 15px;
+    filter: drop-shadow(0px 0px 3px #444);
+}
+
+.text-div {
+    width: 100%;
+}
+
+.town-p {
+    font-family: var(--t-text);
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.town-h2 {
+    color: white;
+    width: 100%;
+    background-color: var(--accent-blue-1);
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.town-motto {
+    text-align: center;
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 12px;
 }
 
 #storm-r-value {
