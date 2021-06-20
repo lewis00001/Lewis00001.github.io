@@ -58,7 +58,7 @@ fetch(townsRequestURL)
             rainFall.textContent = `Average Rainfall: ${towns[i].averageRainfall}`;
             population.textContent = `Current Population: ${towns[i].currentPopulation}`;
             townImg.src = townImage;
-            townImg.alt = 'image of town';
+            townImg.alt = `image of the town of ${towns[i].name}`;
             // output to the UI
             textDiv.appendChild(townH2);
             textDiv.appendChild(motto);
