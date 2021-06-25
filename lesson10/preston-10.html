@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Preston, ID :: Weatherlicious</title>
+        <meta name="description" content="The town page for Preston, ID">
+        <meta name="author" content="E. Lewis Lockhart">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/medium.css">
+        <link rel="stylesheet" href="./css/large.css">
+        <link rel="shortcut icon" href="../images/favIcon.ico">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+            integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" 
+            crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="modal hidden">
+            <div class="modal-inner">
+                <div class="close-modal">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="modal-content">
+                    <div class="modal-title">
+                        Personalize Your Experience
+                    </div>
+                    <div class="description-text">
+                        Please enter your name for a more personal experience.
+                    </div>
+                    <div id="modal-feedback"></div>
+                    <input type="text" id="modal-name-input">
+                    <button id="modal-name-submit" onclick="addNameLocal()">Submit</button>
+                </div>
+                <div class="close-modal" id="modal-close-text">close</div>
+            </div>
+        </div>
+
+        <div class="banner hidden">
+            Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+        </div>
+
+        <header>
+            <div id="h-logo">
+                <picture>
+                    <source media="(min-width: 760px)" srcset="./images/logo200px.png">
+                    <img src="./images/logo300px.png" alt="weatherlicious logo">
+                </picture>
+            </div>
+            <div id="h-text">
+                <h1 id="header-text">Weatherlicious</h1>
+                <div id="tag-line">Where Your Eye Stops to Spy for Raindrops</div>
+            </div>
+            <div id="personalize" onclick="triggerModal()">
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </header>
+
+        <div class="welcome-banner banner hidden"></div>
+        <nav>
+            <ul class="full-width navigation">
+                <li class="nav-li"><a href="#" onclick="toggleMenu()">
+                    <span class="button">&#9776; MENU</span></a></li>
+                <li class="nav-li"><a href="../lesson9/index.html">Home</a></li>
+                <li class="nav-li active"><a href="#">Preston</a></li>
+                <li class="nav-li"><a href="#">Soda Springs</a></li>
+                <li class="nav-li"><a href="#">Fish Haven</a></li>
+                <li class="nav-li"><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+                <li class="nav-li"><a href="../lesson7/gallery7.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main class="full-width">
+
+            <h2 class="page-title">Preston Idaho</h2>
+            
+            <section class="hero-img">
+                <picture>
+                    <source media="(min-width: 650px)" srcset="./images/hero-large.jpg">
+                    <source media="(min-width: 420px)" srcset="./images/hero-medium.jpg">
+                    <img src="./images/hero-small.jpg" alt="sample image for lesson 6">
+                </picture>
+                <!-- <img src="./images/preston.jpg" alt="a bland field near Preston, Id" id="preston-hero"> -->
+                <div class="weather-summary">
+                    <h3 class="ws-h3">Weather Summary</h3>
+                    <table class="ws-table">
+                        <tr>
+                            <td class="title-data">Currently: </td><td class="sum-data"><span id="d-current"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="title-data">Temp: </td><td class="sum-data"><span id="d-temp"></span> &#176;F</td>
+                        </tr>
+                        <tr>
+                            <td class="title-data">Wind Chill: </td><td class="sum-data"><span id="d-wind-c"></span> &#176;F</td>
+                        </tr>
+                        <tr>
+                            <td class="title-data">Humidity: </td><td class="sum-data"><span id="d-humid"></span>%</td>
+                        </tr>
+                        <tr>
+                            <td class="title-data">Wind Speed: </td><td class="sum-data"><span id="d-wind-s"></span> mph</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section class="forcast">
+                <h2>5 Day Forecast</h2>
+                <table class="forecast-table">
+                    <tr id="day-output"></tr>
+                    <tr id="weather-output"></tr>
+                </table>
+            </section>
+
+            <section class="article-sec">
+                <div class="quill">
+                    <div class="quill-q"><i class="fas fa-feather-alt"></i></div>
+                    <div class="quill-q"><i class="fas fa-feather-alt"></i></div>
+                    <div class="quill-q"><i class="fas fa-feather-alt"></i></div>
+                    <div class="quill-hide"><i class="fas fa-feather-alt"></i></div>
+                    <div class="quill-hide"><i class="fas fa-feather-alt"></i></div>
+                </div>
+                <picture>
+                    <source media="(min-width: 701px)" srcset="./images/knitting-l-v.jpg">
+                    <source media="(min-width: 541px)" srcset="./images/knitting-m-v.jpg">
+                    <img src="./images/knitting-s-v.jpg" alt="family knitting together" class="article-img">
+                </picture>
+                
+                <h2>Knitting Hearts Together</h2>
+                <h6>by Megan A. Wirsch</h6>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis ab dolorum sint, 
+                    autem, a necessitatibus provident, doloremque nulla vero sequi possimus dolores inventore. 
+                    Voluptates distinctio, quae officia at voluptas sed? Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Nihil atque incidunt sit maiores eius velit laudantium porro id, commodi 
+                    nulla, quam fugiat ut nesciunt modi tenetur rem nemo culpa ratione?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis ab dolorum sint, 
+                    autem, a necessitatibus provident, doloremque nulla vero sequi possimus dolores inventore. 
+                    Voluptates distinctio, quae officia at voluptas sed? Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Nihil atque incidunt sit maiores eius velit laudantium porro id, commodi 
+                    nulla, quam fugiat ut nesciunt modi tenetur rem nemo culpa ratione?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis ab dolorum sint, 
+                    autem, a necessitatibus provident, doloremque nulla vero sequi possimus dolores inventore. 
+                    Voluptates distinctio, quae officia at voluptas sed? Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Nihil atque incidunt sit maiores eius velit laudantium porro id, commodi 
+                    nulla, quam fugiat ut nesciunt modi tenetur rem nemo culpa ratione?
+                </p>
+                <div class="quill">
+                    <div class="quill-q"><i class="fas fa-feather-alt"></i></div>
+                    <div class="quill-q"><i class="fas fa-feather-alt"></i></div>
+                    <div class="quill-q"><i class="fas fa-feather-alt"></i></div>
+                    <div class="quill-hide"><i class="fas fa-feather-alt"></i></div>
+                    <div class="quill-hide"><i class="fas fa-feather-alt"></i></div>
+                </div>
+            </section>
+
+            <section class="address-sec">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.3409672128114!2d121.48777255042269!3d31.23898308137265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b27057eca10f61%3A0x72e78840c83d675!2sNan%20Jing%20Dong%20Lu%20%26%20Zhong%20Shan%20Dong%20Yi%20Lu%2C%20Nan%20Jing%20Dong%20Lu%2C%20Huangpu%20Qu%2C%20Shanghai%20Shi%2C%20China!5e0!3m2!1sen!2sus!4v1622315709127!5m2!1sen!2sus" 
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="contact">
+                    <div class="contact-inner">
+                        <div class="address">
+                            <h2>Weatherlicious</h2>
+                            <p><i class="fas fa-map-marker-alt"></i> Zhongshan East 1st Rd,</p>
+                            <p>Waitan, Hongkou District,</p>
+                            <p>Shanghai, China</p>
+                        </div>
+                        <br>
+                        <div class=phone-email>
+                            <i class="fas fa-phone-square-alt"></i> 801.223.1091
+                            <br>
+                            <i class="fas fa-envelope-open-text"></i> lewis@weather.com
+                        </div>
+                        <br>
+                        <div class="social">
+                            <i class="fab fa-twitter-square"></i>
+                            <i class="fab fa-facebook-square"></i>
+                            <i class="fab fa-pinterest-square"></i>
+                            <i class="fab fa-instagram-square"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="full-width">
+            © <span id="current-year"></span> | E. Lewis Lockhart | Utah <br>
+            <a id="byui" href="https://www.byui.edu/online" target="_blank">BYUi Online Learning</a><br>
+            <span id="last-updated"></span>
+        </footer> 
+
+        <script src="./js/currentYear.js"></script>
+        <script src="./js/lastUpdated.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="./js/webFontLoad.js"></script>
+        <script src="./js/modal.js"></script>
+        <script src="./js/prestonWeatherApi.js" defer></script>
+    </body>
+</html>
