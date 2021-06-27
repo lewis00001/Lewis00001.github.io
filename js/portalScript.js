@@ -54,8 +54,8 @@ document.addEventListener('DOMContentLoaded', function() {
             link: './lesson9/index.html'
         },
         {   week: '10.0',
-            name: 'assignment-link',
-            link: '#'
+            name: 'Preston - API',
+            link: './lesson10/preston-10.html'
         },
         {   week: '11.0',
             name: 'assignment-link',
