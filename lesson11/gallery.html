@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Weather Gallery :: Weatherlicious</title>
+        <meta name="description" content="Beautiful image gallery of user submitted images.">
+        <meta name="author" content="E. Lewis Lockhart">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/medium.css">
+        <link rel="stylesheet" href="./css/large.css">
+        <link rel="shortcut icon" href="../images/favIcon.ico">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+            integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" 
+            crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="modal hidden">
+            <div class="modal-inner">
+                <div class="close-modal">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="modal-content">
+                    <div class="modal-title">
+                        Personalize Your Experience
+                    </div>
+                    <div class="description-text">
+                        Please enter your name for a more personal experience.
+                    </div>
+                    <div id="modal-feedback"></div>
+                    <input type="text" id="modal-name-input">
+                    <button id="modal-name-submit" onclick="addNameLocal()">Submit</button>
+                </div>
+                <div class="close-modal" id="modal-close-text">close</div>
+            </div>
+        </div>
+
+        <div class="banner hidden">
+            Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+        </div>
+
+        <header>
+            <div id="h-logo">
+                <picture>
+                    <source media="(min-width: 760px)" srcset="../lesson6/images/logo200px.png">
+                    <img src="../lesson6/images/logo300px.png" alt="weatherlicious logo">
+                </picture>
+            </div>
+            <div id="h-text">
+                <h1 id="header-text">Weatherlicious</h1>
+                <div id="tag-line">Where Your Eye Stops to Spy for Raindrops</div>
+            </div>
+            <div id="personalize" onclick="triggerModal()">
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </header>
+
+        <div class="welcome-banner banner hidden"></div>
+
+        <nav>
+            <ul class="full-width navigation">
+                <li class="nav-li"><a href="#" onclick="toggleMenu()">
+                    <span class="button">&#9776; MENU</span></a></li>
+                <li class="nav-li"><a href="./index.html">Home</a></li>
+                <li class="nav-li"><a href="./preston.html">Preston</a></li>
+                <li class="nav-li"><a href="./sodaSprings.html">Soda Springs</a></li>
+                <li class="nav-li"><a href="./fishHaven.html">Fish Haven</a></li>
+                <li class="nav-li"><a href="./stormcenter.html">Storm Center</a></li>
+                <li class="nav-li active"><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main class="full-width-gallery">
+
+            <h2 class="page-title">Weather Gallery</h2>
+            <section class="gallery">
+
+                <figure class="gallery-image">
+                    <a href="./images/gallery/1-650.jpg" target="_blank">
+                        <picture>
+                            <img src="./images/loading.gif" data-src="./images/gallery/1-300.jpg" alt="Deer Forest">
+                        </picture>
+                    </a>
+                    <figcaption class="gallery-cap">Deer Forest</figcaption>
+                </figure>
+
+                <figure class="gallery-image">
+                    <a href="./images/gallery/3-650.jpg" target="_blank">
+                        <picture>
+                            <img src="./images/loading.gif" data-src="./images/gallery/3-300.jpg" alt="Big Cloud">
+                        </picture>
+                    </a>
+                    <figcaption class="gallery-cap">Big Cloud</figcaption>
+                </figure>
+
+                <figure class="gallery-image">
+                    <a href="./images/gallery/2-650.jpg" target="_blank">
+                        <picture>
+                            <img src="./images/loading.gif" data-src="./images/gallery/2-300.jpg" alt="Farm House">
+                        </picture>
+                    </a>
+                    <figcaption class="gallery-cap">Farm House</figcaption>
+                </figure>
+
+                <figure class="gallery-image">
+                    <a href="./images/gallery/4-650.jpg" target="_blank">
+                        <picture>
+                            <img src="./images/loading.gif" data-src="./images/gallery/4-300.jpg" alt="Iron Valley">
+                        </picture>
+                    </a>
+                    <figcaption class="gallery-cap">Iron Valley</figcaption>
+                </figure>
+
+                <figure class="gallery-image">
+                    <a href="./images/gallery/5-650.jpg" target="_blank">
+                        <picture>
+                            <img src="./images/loading.gif" data-src="./images/gallery/5-300.jpg" alt="River Grove">
+                        </picture>
+                    </a>
+                    <figcaption class="gallery-cap">River Grove</figcaption>
+                </figure>
+
+                <figure class="gallery-image">
+                    <a href="./images/gallery/6-650.jpg" target="_blank">
+                        <picture>
+                            <img src="./images/loading.gif" data-src="./images/gallery/6-300.jpg" alt="Snow Farm">
+                        </picture>
+                    </a>
+                    <figcaption class="gallery-cap">Snow Farm</figcaption>
+                </figure>
+
+                <figure class="gallery-image">
+                    <a href="./images/gallery/7-650.jpg" target="_blank">
+                        <picture>
+                            <img src="./images/loading.gif" data-src="./images/gallery/7-300.jpg" alt="Sunset Trees">
+                        </picture>
+                    </a>
+                    <figcaption class="gallery-cap">Sunset Trees</figcaption>
+                </figure>
+
+                <figure class="gallery-image">
+                    <a href="./images/gallery/8-650.jpg" target="_blank">
+                        <picture>
+                            <img src="./images/loading.gif" data-src="./images/gallery/8-300.jpg" alt="Lake Vista">
+                        </picture>
+                    </a>
+                    <figcaption class="gallery-cap">Lake Vista</figcaption>
+                </figure>
+
+                <figure class="gallery-image">
+                    <a href="./images/gallery/9-650.jpg" target="_blank">
+                        <picture>
+                            <img src="./images/loading.gif" data-src="./images/gallery/9-300.jpg" alt="Rock River">
+                        </picture>
+                    </a>
+                    <figcaption class="gallery-cap">Rock River</figcaption>
+                </figure>
+
+                <figure class="gallery-image">
+                    <a href="./images/gallery/10-650.jpg" target="_blank">
+                        <picture>
+                            <img src="./images/loading.gif" data-src="./images/gallery/10-300.jpg" alt="Wood Path">
+                        </picture>
+                    </a>
+                    <figcaption class="gallery-cap">Wood Path</figcaption>
+                </figure>
+
+                <figure class="gallery-image">
+                    <a href="./images/gallery/11-650.jpg" target="_blank">
+                        <picture>
+                            <img src="./images/loading.gif" data-src="./images/gallery/11-300.jpg" alt="Storm Cloud">
+                        </picture>
+                    </a>
+                    <figcaption class="gallery-cap">Storm Cloud</figcaption>
+                </figure>
+
+                <figure class="gallery-image">
+                    <a href="./images/gallery/12-650.jpg" target="_blank">
+                        <picture>
+                            <img src="./images/loading.gif" data-src="./images/gallery/12-300.jpg" alt="Quiet Place">
+                        </picture>
+                    </a>
+                    <figcaption class="gallery-cap">Quiet Place</figcaption>
+                </figure>
+            </section>
+            <!-- All images in this gallery where obtained through https://search.creativecommons.org/ -->
+        </main>
+
+        <footer class="full-width-gallery gallery-footer">
+            © <span id="current-year"></span> | E. Lewis Lockhart | Utah <br>
+            <a id="byui" href="https://www.byui.edu/online" target="_blank">BYUi Online Learning</a><br>
+            <span id="last-updated"></span>
+        </footer> 
+
+        <script src="./js/currentYear.js"></script>
+        <script src="./js/lastUpdated.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="./js/webFontLoad.js"></script>
+        <script src="./js/modal.js" defer></script>
+    </body>
+</html>

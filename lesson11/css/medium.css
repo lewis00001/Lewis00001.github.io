@@ -1,0 +1,120 @@
+/* ----- tablet view (36 em) -------------------------- */
+@media only screen and (min-width: 36em) {
+    :root {
+        --h-text: 'Merriweather', serif;
+        --t-text: 'Source Sans Pro', sans-serif;
+        --text-color: #01161E;
+        --accent-blue-1: #124559;
+        --accent-blue-2: #598392;
+        --accent-blue-3: rgba(7, 27, 35, 0.7);
+        --bg-1: #AEC3B0;
+        --bg-2: #EFF6E0;
+    }
+
+    th {
+        font-family: var(--t-text);
+        font-size: 16px;
+        background-color: var(--accent-blue-1);
+        color: var(--bg-2);
+        padding: 5px;
+    }
+
+    .forcast {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: block;
+        text-align: center;
+    }
+
+    .weather-summary {
+        position: absolute;
+        width: 200px;
+        top: 20px;
+        left: 20px;
+        margin-top: 0;
+        background-color: var(--accent-blue-3);
+    }
+
+    .forecast-table {
+        margin: 0 auto;
+        margin-top: 8px;
+        width: 500px;
+        border: 1px solid var(--accent-blue-2);
+    }
+
+    .forecast-info span {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 8px;
+    }
+
+    .map {
+        min-width: 50%;
+    }
+
+    .map iframe {
+        display: block;
+        width: 100%; 
+        height: 100%;
+        border: 0;
+    }
+    
+    .quill-hide {
+        display: block;
+    }
+
+    .input-section {
+        flex-direction: row;
+        padding: 8px;
+        font-family: var(--t-text);
+        margin: 0 auto;
+        max-width: 500px;
+    }
+
+    .input-section label {
+        width: 180px;
+        padding: 8px;
+    }
+    
+    .input-section input {
+        width: 100%;
+    }
+
+    .input-section textarea {
+        width: 100%;
+    }
+
+    .input-section select {
+        width: 100%;
+    }
+
+    .fs-sec {
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    .town-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .town-div:nth-child(odd) {
+        flex-direction: row-reverse;
+    } 
+
+    .town-div img {
+        padding: 0;
+        filter: drop-shadow(0 0 0 #000);
+    }
+
+    #storm-r-value {
+        width: 40px;
+    }
+
+    #storm-r {
+        width: 450px;
+    }
+}
