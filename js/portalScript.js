@@ -58,8 +58,8 @@ document.addEventListener('DOMContentLoaded', function() {
             link: './lesson10/preston-10.html'
         },
         {   week: '11.0',
-            name: 'assignment-link',
-            link: '#'
+            name: 'Completed Weather Site',
+            link: './lesson11/index.html'
         },
         {   week: '12.0',
             name: 'assignment-link',
