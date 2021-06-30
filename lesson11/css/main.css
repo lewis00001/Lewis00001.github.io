@@ -446,7 +446,6 @@ th {
 
 .home-article {
     background-color: var(--bg-2);
-    padding: 10px;
     margin-bottom: 30px;
 }
 
@@ -467,6 +466,10 @@ th {
 .home-news {
     height: 400px;
     overflow: auto;
+}
+
+.home-towns {
+    margin-top: 30px;
 }
 
 .home-headline {
@@ -583,7 +586,8 @@ th {
     color: var(--accent-blue-1);
 }
 
-#byui {
+#byui, 
+#terms {
     color: var(--text-color);
 }
 
