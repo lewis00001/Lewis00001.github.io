@@ -235,7 +235,7 @@ th {
 }
 
 .article-sec p {
-    line-height: 1.2em;
+    line-height: 1.8em;
     padding-bottom: 4px;
     max-width: 550px;
     font-size: 17px;
@@ -269,6 +269,10 @@ th {
 
 .social {
     font-size: 22px;
+}
+
+.social a i {
+    color: var(--bg-2);
 }
 
 .address h2 {
