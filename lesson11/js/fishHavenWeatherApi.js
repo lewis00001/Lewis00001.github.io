@@ -1,10 +1,10 @@
-const currentRequestURL = 'https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&appid=56d4bed8121c5c74b4e0b39fe015f865';
-const fiveDayRequestURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&appid=56d4bed8121c5c74b4e0b39fe015f865';
+const locationUnitsKey = '?lat=42.0368759&lon=-111.3963177&units=imperial&appid=56d4bed8121c5c74b4e0b39fe015f865';
+const currentRequestURL = `https://api.openweathermap.org/data/2.5/weather${locationUnitsKey}`;
+const fiveDayRequestURL = `https://api.openweathermap.org/data/2.5/forecast${locationUnitsKey}`;
 
 fetch(currentRequestURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    //console.log(jsObject);
 
     // the current condition description
     let current = jsObject.weather[0].main;

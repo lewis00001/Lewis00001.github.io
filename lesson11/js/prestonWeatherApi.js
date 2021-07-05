@@ -1,5 +1,6 @@
-const currentRequestURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=56d4bed8121c5c74b4e0b39fe015f865';
-const fiveDayRequestURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=56d4bed8121c5c74b4e0b39fe015f865';
+const locationUnitsKey = '?id=5604473&units=imperial&appid=56d4bed8121c5c74b4e0b39fe015f865';
+const currentRequestURL = `https://api.openweathermap.org/data/2.5/weather${locationUnitsKey}`;
+const fiveDayRequestURL = `https://api.openweathermap.org/data/2.5/forecast${locationUnitsKey}`;
 
 fetch(currentRequestURL)
   .then((response) => response.json())
