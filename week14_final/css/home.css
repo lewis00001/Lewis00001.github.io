@@ -273,7 +273,7 @@
     letter-spacing: 0.1em;
     padding: 8px;
     color: var(--accent-w);
-    background-color: var(--accent-r);
+    background-color: rgb(150, 0, 0);
 }
 
 .weather-alert p {
