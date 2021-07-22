@@ -61,13 +61,9 @@ document.addEventListener('DOMContentLoaded', function() {
             name: 'Completed Weather Site',
             link: './lesson11/index.html'
         },
-        {   week: '12.0',
-            name: 'assignment-link',
-            link: '#'
-        },
-        {   week: '13.0',
-            name: 'assignment-link',
-            link: '#'
+        {   week: '14.0',
+            name: 'Final Project - CC',
+            link: './week14_final/index.html'
         }
     ];
 
