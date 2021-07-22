@@ -88,9 +88,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // SLIDE SHOW IMG LOAD
     // get elements
-    let sl1 = document.querySelector('[role="list-1"]');
-    let sl2 = document.querySelector('[role="list-2"]');
-    let sl3 = document.querySelector('[role="list-3"]');
+    let sl1 = document.querySelector('[role="list1"]');
+    let sl2 = document.querySelector('[role="list2"]');
+    let sl3 = document.querySelector('[role="list3"]');
 
     // loop and create/output content
     for (let i = 1; i <= 5 ; i++) {
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // run the slideshow
     function runSlideShow1(slideshow) {
         // holds slides
-        let slides = document.querySelectorAll(`#${slideshow.id} [role="list-1"] .slide`);
+        let slides = document.querySelectorAll(`#${slideshow.id} [role="list1"] .slide`);
         // vars 
         let i = 0, time = 3000;
         // makes current slide active
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // run the slideshow
     function runSlideShow2(slideshow) {
         // holds slides
-        let slides = document.querySelectorAll(`#${slideshow.id} [role="list-2"] .slide`);
+        let slides = document.querySelectorAll(`#${slideshow.id} [role="list2"] .slide`);
         // vars 
         let i = 0, time = 4000;
         // makes current slide active
@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // run the slideshow
     function runSlideShow3(slideshow) {
         // holds slides
-        let slides = document.querySelectorAll(`#${slideshow.id} [role="list-3"] .slide`);
+        let slides = document.querySelectorAll(`#${slideshow.id} [role="list3"] .slide`);
         // vars 
         let i = 0, time = 3500;
         // makes current slide active
