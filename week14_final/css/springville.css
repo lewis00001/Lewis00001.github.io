@@ -84,7 +84,7 @@
     letter-spacing: 0.15em;
     font-size: 18px;
     font-weight: 600;
-    color: var(--accent-r);
+    color: var(--accent-g);
     margin-bottom: 4px;
 }
 
@@ -97,10 +97,10 @@
     font-weight: 700;
     padding-left: 12px;
     margin-left: 10px;
-    color: var(--accent-w);
+    color: var(--accent-b-h);
     padding-right: 12px;
     text-align: center;
-    background-color: var(--accent-b-h);
+    border: 1px solid var(--accent-b-h);
     border-radius: 10px;
 }
 
