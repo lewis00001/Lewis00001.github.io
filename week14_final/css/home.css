@@ -267,6 +267,25 @@
     margin: 0 auto;
 }
 
+.weather-alert {
+    width: 100%;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 8px;
+    color: var(--accent-w);
+    background-color: var(--accent-r);
+}
+
+.weather-alert p {
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+#close-weather-banner {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 /* ----- tablet view (36 em) -------------------------- */
 @media only screen and (min-width: 36em) { 
 
