@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home :: Springville Chamber of Commerce</title>
+        <meta name="description" content="Springville Utah Chamber of Commerce, signup, contact, directory.">
+        <meta name="author" content="E. Lewis Lockhart">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="./images/favicon/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+            integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" 
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/header-style.css">
+        <link rel="stylesheet" href="./css/nav-style.css">
+        <link rel="stylesheet" href="./css/footer-style.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/contact.css">
+    </head>
+
+    <body>
+        <header></header>
+        <nav></nav>
+
+        <main>
+            <h1 class="page-title">Contact</h1>
+
+            <section class="contact-us-form">
+
+                <form action="contact-thank-you.html">
+                    <p>* All fields are required</p>
+                    <div class="input-section">
+                        <label for="full-name">Full Name</label>
+                        <input pattern="(.*[A-Za-z]){5}" type="text" name="fullName" id="full-name" placeholder="first & last" required>
+                    </div>
+
+                    <div class="input-section">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel"  name="phoneNumber" id="phone-number" placeholder="000-000-0000" required>
+                    </div>
+
+                    <div class="input-section">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="email@address.com" minlength="3" maxlength="64" required>
+                    </div>
+
+                    <div class="input-section">
+                        <label for="storm">Inquiry Type</label>
+                            <input type="text" list="inquiry-type" onfocus="this.value=''" name="inquiry" id="inquiry" placeholder="select one ...">
+                            <datalist id="inquiry-type">
+                                <option value="Arts Council"></option>
+                                <option value="Events"></option>
+                                <option value="Farmers Market"></option>
+                                <option value="Feedback (general)"></option>
+                                <option value="Membership"></option>
+                                <option value="Site Issue"></option>
+                                <option value="Treasurer"></option>
+                                <option value="Other"></option>
+                            </datalist>
+                    </div>
+
+                    <div class="input-section">
+                        <label for="comments">Additional Information:</label><br>
+                        <textarea name="comments" id="comments"></textarea>
+                    </div>
+                    
+                    <div class="input-section">
+                        <input type="submit" value="Submit" class="submit submit-div">
+                    </div>
+                </form>
+
+                <div class="board-of-directors">
+                    <h2>2021 Chamber Board of Directors</h2>
+                    <br>
+                    <div>
+                        <i class="fas fa-star"></i>
+                        Katie Ferraro – President
+                    </div>
+                    <div>
+                        <i class="fas fa-star"></i>
+                        Regina Aquino- Vice President
+                    </div>
+                    <div>
+                        <i class="fas fa-star"></i>
+                        Barbara Ferraro – Treasurer
+                    </div>
+                    <div>
+                        <i class="fas fa-star"></i>
+                        Charles Baldwin – Secretary
+                    </div>
+                    <div>
+                        <i class="fas fa-star"></i>
+                        Derrick Usher – Membership
+                    </div>
+                    <div>
+                        <i class="fas fa-star"></i>
+                        Francis Pyles – Arts Council
+                    </div>
+                    <div>
+                        <i class="fas fa-star"></i>
+                        Laura Henry – Farmers Market
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="address-sec">
+                <div class="map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d48785.80657817569!2d-111.64510789667577!3d40.162039699200385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1626595077652!5m2!1sen!2sus" 
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+                <div class="contact">
+                    <div class="contact-inner">
+                        <div class="address">
+                            <h2>Springville C.C.</h2>
+                            <p><i class="fas fa-map-marker-alt"></i> 110 South Main Street</p>
+                            <p>Springville, UT 84663</p>
+                            <br>
+                            <i class="fas fa-phone-square-alt"></i> 801.223.1091
+                            <br>
+                            <i class="fas fa-envelope-open-text"></i> info@springville-cc.org
+                        </div>
+                        <br>
+                        <div class="social">
+                            <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter-square"></i>
+                                <p class="hidden">.</p>
+                            </a>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i>
+                                <p class="hidden">.</p>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i>
+                                <p class="hidden">.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer></footer> 
+
+        <script src="./js/navigation.js"></script>
+        <script src="./js/header.js"></script>
+        <script src="./js/footer.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/currentYear.js"></script>
+        <script src="./js/lastUpdated.js" defer></script>
+    </body>
+</html>

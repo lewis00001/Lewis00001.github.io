@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home :: Springville Chamber of Commerce</title>
+        <meta name="description" content="Springville Utah Chamber of Commerce, signup, contact, directory.">
+        <meta name="author" content="E. Lewis Lockhart">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="./images/favicon/favicon.ico">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+            integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" 
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/header-style.css">
+        <link rel="stylesheet" href="./css/nav-style.css">
+        <link rel="stylesheet" href="./css/footer-style.css">
+        <link rel="stylesheet" href="./css/join-us-banner.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/home.css">
+    </head>
+
+    <body>
+        <header></header>
+        <nav></nav>
+
+        <main>
+
+            <section class="hero-img">
+                <h1 class="page-title">Home</h1>
+                <picture>
+                    <source media="(min-width: 650px)" srcset="./images/park1hero_700.jpg">
+                    <source media="(min-width: 420px)" srcset="./images/park1hero_550.jpg">
+                    <img src="./images/park1hero_320.jpg" alt="springville water park">
+                </picture>
+            </section>
+
+            <section class="purpose">
+                <h2>Our Purpose</h2>
+                <di class="info">
+                    <p>We are here to promote the business interests of the members of the Springville City Chamber of Commerce 
+                        and to highlight the sites and attractions in the area.</p>
+                    <p>In doing this, we hope to  attract additional business, residents, and visitors to come and experience 
+                        the wonderful town that we all know and love.</p>
+                </div>
+            </section>
+
+            <section class="featured-members">
+                <h2>Meet Some of Our Members</h2>
+                <div class="f-members">
+                    <div class="member">
+                        <picture>
+                            <source media="(min-width: 650px)" srcset="./images/fun_342.jpg">
+                            <source media="(min-width: 420px)" srcset="./images/fun_220.jpg">
+                            <img src="./images/fun_510.jpg" alt="funfinity business storefront">
+                        </picture>
+                        <div class="member-text">
+                            <h3>Funfinity</h3>
+                            <p>Funfinity is a family owned and operated. They carry a variety of toys, games, books, and chocolate 
+                                supplies. Everyday they do their best to help customers find the perfect gift. Their employees are 
+                                committed to giving customers the best possible experience. Check them out and start having fun today.
+                            </p>
+                            <div class="button">
+                                <a href="https://www.funfinity.com/" target="_blank">
+                                    <div>
+                                        Check 'em Out
+                                    </div> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member">
+                        <picture>
+                            <source media="(min-width: 650px)" srcset="./images/music_342.jpg">
+                            <source media="(min-width: 420px)" srcset="./images/music_220.jpg">
+                            <img src="./images/music_510.jpg" alt="mountain rock music business storefront">
+                        </picture>
+                        <div class="member-text">
+                            <h3>Mountain Rock Music</h3>
+                            <p>Mountain Rock Music shares their passion for music with you and your family. They pride themselves for 
+                                their musical knowledge, and promise customers the best service and experience. They provide guitars, 
+                                band instruments, print music, rentals, repairs, drum accessories, and any other musical accessory imaginable.
+                            </p>
+                            <div class="button">
+                                <a href="https://mountainrockmusiconline.com/" target="_blank">
+                                    <div>
+                                        Check 'em Out
+                                    </div> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member">
+                        <picture>
+                            <source media="(min-width: 650px)" srcset="./images/pizza_342.jpg">
+                            <source media="(min-width: 420px)" srcset="./images/pizza_220.jpg">
+                            <img src="./images/pizza_510.jpg" alt="mountain rock music business storefront">
+                        </picture>
+                        <div class="member-text">
+                            <h3>Pier 49 Pizza</h3>
+                            <p>In 1991, Pier 49 fired up its first oven. More than two decades later, their quest and passion remains the same: 
+                                Create the most mouthwateringly delicious gourmet pizzas. They’re sure you’ll agree with the critics and guests: 
+                                Pier 49 is the best…anywhere! Savor our famous sourdough crust, premium mozzarella and five imported cheeses.
+                            </p>
+                            <div class="button">
+                                <a href="https://pier49.com/" target="_blank">
+                                    <div>
+                                        Check 'em Out
+                                    </div> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="join-us"></div>
+
+            <section class="events-weather">
+                <div class="events">
+                    <h2>Upcoming Events</h2>
+                    <hr>
+                    <div class="event-list"></div>
+                </div>
+                <div class="weather">
+                    <div class="title-current">
+                        <div><h2>Current Weather</h2></div>
+                        <div class="current-weather"></div>
+                    </div>
+                    <div class="hr">
+                        <hr>
+                    </div>
+                    <div class="forecast">
+                        <h2>Three-day Forecast</h2>
+                        <div class="forecast-output">
+                            <table class="forecast-table">
+                                <tr id="day-output"><td class="hidden"></td></tr>
+                                <tr id="weather-output"><td class="hidden"></td></tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="address-sec">
+                <div class="map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d48785.80657817569!2d-111.64510789667577!3d40.162039699200385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1626595077652!5m2!1sen!2sus" 
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+                <div class="contact">
+                    <div class="contact-inner">
+                        <div class="address">
+                            <h2>Springville C.C.</h2>
+                            <p><i class="fas fa-map-marker-alt"></i> 110 South Main Street</p>
+                            <p>Springville, UT 84663</p>
+                            <br>
+                            <i class="fas fa-phone-square-alt"></i> 801.223.1091
+                            <br>
+                            <i class="fas fa-envelope-open-text"></i> info@springville-cc.org
+                        </div>
+                        <br>
+                        <div class="social">
+                            <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter-square"></i>
+                                <p class="hidden">.</p>
+                            </a>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i>
+                                <p class="hidden">.</p>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i>
+                                <p class="hidden">.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer></footer> 
+
+        <script src="./js/navigation.js"></script>
+        <script src="./js/header.js"></script>
+        <script src="./js/footer.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/join-us-banner.js"></script>
+        <script src="./js/upcoming-events.js"></script>
+        <script src="./js/weather.js"></script>
+        <script src="./js/current-year.js"></script>
+        <script src="./js/last-updated.js" defer></script>
+    </body>
+</html>

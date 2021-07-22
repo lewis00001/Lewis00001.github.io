@@ -1,0 +1,194 @@
+:root {
+    --h-text: 'Merriweather', serif;
+    --t-text: 'Source Sans Pro', sans-serif;
+    --accent-o: #F09720;
+    --accent-b: #25CAD2;
+    --accent-b-h: #1a8c92;
+    --accent-r: #ED1B33;
+    --accent-g: #343A40;
+    --accent-g-l: #788491;
+    --accent-w: #fff;
+}
+
+input, textarea {
+    width: 100%;
+    max-width: 500px;
+    font-size: 14px;
+    font-family: var(--h-text);
+}
+
+.red {
+    color: var(--accent-r);
+}
+
+.join-us-form {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.join-us-form form {
+    margin: 0 auto;
+    padding: 16px;
+    width: 90%;
+    max-width: 530px;
+}
+
+.join-us-form .input-section input {
+    height: 40px;
+    padding: 8px;
+    margin-bottom: 15px;
+    font-family: var(--t-text);
+    border: none;
+    border-bottom: 1px solid var(--accent-g);
+}
+
+.join-us-form .input-section label {
+    font-family: var(--h-text);
+}
+
+.join-us-form .input-section textarea {
+    padding: 6px;
+    margin-bottom: 10px;
+    height: 120px;
+}
+
+.join-us-form .input-section .submit {
+    font-family: var(--t-text);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px 8px 6px 8px;
+    background-color: var(--accent-b);
+    color: var(--accent-g);
+    border: 0;
+}
+
+.join-us-form .input-section .submit:hover {
+    background-color: var(--accent-b-h);
+    color: var(--accent-w);
+}
+
+.join-us-form form h3 {
+    text-align: left;
+    margin-bottom: 2px;
+}
+
+.membership-levels {
+    width: 100%;
+    background-color: var(--accent-g);
+    color: var(--accent-w);
+    padding: 16px;
+}
+
+.membership-levels div {
+    width: 100%;
+    font-family: var(--t-text);
+    letter-spacing: 0.1em;
+}
+
+.fa-crown {
+    font-size: 40px;
+    margin: 6px;
+}
+
+.perk-div {
+    padding-bottom: 24px;
+}
+
+.perk {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.n-profit {
+    color: var(--accent-b);
+    font-size: 30px;
+    border-top: 2px solid var(--accent-b);
+    border-bottom: 2px solid var(--accent-b);
+    text-align: center;
+}
+
+.n-profit-arrow {
+    color: var(--accent-b);
+    font-size: 20px;
+}
+
+.bronze {
+    color: #CD7F32;
+    font-size: 30px;
+    border-top: 2px solid #CD7F32;
+    border-bottom: 2px solid #CD7F32;
+    text-align: center;
+}
+
+.bronze-arrow {
+    color: #CD7F32;
+    font-size: 20px;
+}
+
+.silver {
+    color: silver;
+    font-size: 30px;
+    border-top: 2px solid silver;
+    border-bottom: 2px solid silver;
+    text-align: center;
+}
+
+.silver-arrow {
+    color: silver;
+    font-size: 20px;
+}
+
+.gold {
+    color: gold;
+    font-size: 30px;
+    border-top: 2px solid gold;
+    border-bottom: 2px solid gold;
+    text-align: center;
+}
+
+.gold-arrow {
+    color: gold;
+    font-size: 20px;
+}
+
+.thank-you {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 16px 80px 16px;
+}
+
+.thank-you h2 {
+    color: var(--accent-b-h);
+}
+
+.thank-you p {
+    font-size: 20px;
+    text-align: center;
+}
+
+#join-us-intro {
+    font-family: var(--t-text);
+    color: var(--accent-b-h);
+    margin: 16px;
+}
+
+/* ----- desktop view (50 em) -------------------------- */
+@media only screen and (min-width: 50em) { 
+
+    .join-us-form {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .join-us-form form {
+        width: 50%;
+    }
+
+    .membership-levels {
+        padding-top: 30px;
+        border-radius: 30px;
+        width: 50%;
+    }
+}

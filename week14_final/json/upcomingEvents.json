@@ -1,0 +1,44 @@
+{
+    "events": [
+        {
+            "event": "Sunset Farmers Market",
+            "date": "July 26, 2021",
+            "time": "5:00 pm – 9:00 pm",
+            "location": "Springville Civic Center",
+            "address": "110 South Main Street",
+            "age-group": "All Ages"
+        },
+        {
+            "event": "Teen Smash Bros Brawl",
+            "date": "July 26, 2021",
+            "time": "3:00 pm – 4:00 pm",
+            "location": "Springville Public Library",
+            "address": "45 S Main St",
+            "age-group": "Teens"
+        },
+        {
+            "event": "Planning Commission",
+            "date": "July 27, 2021",
+            "time": "7:00 pm",
+            "location": "Springville Civic Center",
+            "address": "110 South Main Street",
+            "age-group": "Adults"
+        },
+        {
+            "event": "Nebo Novelists",
+            "date": "August 10, 2021",
+            "time": "6:30 pm – 8:00 pm",
+            "location": "Springville Public Library",
+            "address": "45 S Main St",
+            "age-group": "Adults"
+        },
+        {
+            "event": "Tween Night Fossil Dig",
+            "date": "August 26, 2021",
+            "time": "7:00 pm – 8:00 pm",
+            "location": "Springville Public Library",
+            "address": "45 S Main St",
+            "age-group": "Tweens"
+        }
+    ]
+}

@@ -1,0 +1,81 @@
+:root {
+    --h-text: 'Merriweather', serif;
+    --t-text: 'Source Sans Pro', sans-serif;
+    --accent-o: #F09720;
+    --accent-b: #25CAD2;
+    --accent-r: #ED1B33;
+    --accent-g: #343A40;
+    --accent-w: #fff;
+}
+
+nav {
+    background-color: var(--accent-b);
+    font-family: var(--h-text);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.12em;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+nav ul li.active a {
+    background-color: var(--accent-w); 
+    border-radius: 16px 16px 0 0;
+}
+
+nav ul li.active a:hover {
+    background-color: var(--accent-w); 
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 16px 16px 0 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+/* large view nav change */
+@media only screen and (min-width: 47.5em) {
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    nav ul li a {
+        border-top: none;
+        width: 140px;
+        text-align: center;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+    
+    .navigation li {
+        display: block;
+    }
+}

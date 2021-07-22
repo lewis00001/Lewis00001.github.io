@@ -1,0 +1,229 @@
+:root {
+    --h-text: 'Merriweather', serif;
+    --t-text: 'Source Sans Pro', sans-serif;
+    --accent-o: #F09720;
+    --accent-b: #25CAD2;
+    --accent-b-h: #1a8c92;
+    --accent-r: #ED1B33;
+    --accent-g: #343A40;
+    --accent-g-l: #788491;
+    --accent-w: #fff;
+}
+
+.attribution {
+    font-family: var(--h-text);
+    font-style: italic;
+}
+
+.stat-data {
+    max-width: 700px;
+    margin: 48px auto;
+}
+
+.stat-data p {
+    width: 100%;
+    padding: 10px 16px 6px 16px;
+    font-family: var(--h-text);
+}
+
+.stat-data-output .content {
+    width: 100%;
+    padding: 10px 16px 6px 16px;
+    font-family: var(--t-text);
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.stat-data-output .content .divider {
+    flex: 1 1 auto;
+    height: 8px;
+    margin: 8px;
+    border-bottom: 0.5px dotted var(--accent-g);
+}
+
+.stat-data-output .content .value {
+    width: 75px;
+}
+
+.slideshow-sec {
+    display: none;
+}
+
+.events-sec {
+    width: 100%;
+    margin: 16px auto;
+    max-width: 475px;
+    display: flex;
+    flex-direction: column;
+}
+
+.events {
+    width: 100%;
+    padding: 16px;
+    color: var(--accent-g);
+}
+
+.events h2 {
+    color: var(--accent-b);
+}
+
+.event-list {
+    font-family: var(--t-text);
+    max-width: 330px;
+    margin: 0 auto;
+}
+
+.event-list div {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.event-list div .e-name {
+    letter-spacing: 0.15em;
+    font-size: 18px;
+    color: var(--accent-r);
+    margin-bottom: 4px;
+}
+
+.event-list div .age {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 0;
+    text-shadow: none;
+    font-size: 12px;
+    font-weight: 700;
+    padding-left: 12px;
+    margin-left: 10px;
+    color: var(--accent-w);
+    padding-right: 12px;
+    text-align: center;
+    background-color: var(--accent-b);
+    border-radius: 10px;
+}
+
+.event-list div .location {
+    color: var(--accent-b-h)
+}
+
+.mobile-img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mobile-img img {
+    max-width: 100%;
+}
+
+.history {
+    max-width: 800px;
+    background-color: var(--accent-g);
+    color: var(--accent-w);
+    padding: 16px;
+    margin: 0 auto;
+}
+
+.history .h-content p {
+    letter-spacing: 0.1em;
+    line-height: 1.8em;
+}
+
+.history .h-content .img-div {
+    display: block;
+    width: 100%;
+}
+
+.history .h-content .img-div img {
+    width: 300px;
+    display: block;
+    max-width: 100%;
+    filter: drop-shadow(3px 3px 1px #222);
+}
+
+.f-left {
+    margin: 16px auto;
+    float: none;
+}
+
+.f-right {
+    margin: 16px auto;
+    float: none;
+}
+
+/* ----- tablet view (36 em) -------------------------- */
+@media only screen and (min-width: 36em) { 
+
+    .mobile-img {
+        display: none;
+    }
+
+    .slideshow-sec {
+        display: block;
+    }
+
+    [data-component="slideshow-1"] .slide {
+        display: none;
+      text-align: center;
+    }
+    
+    [data-component="slideshow-1"] .slide.active {
+        display: block;
+    }
+    
+    [data-component="slideshow-2"] .slide {
+        display: none;
+      text-align: center;
+    }
+    
+    [data-component="slideshow-2"] .slide.active {
+        display: block;
+    }
+    
+    [data-component="slideshow-3"] .slide {
+        display: none;
+      text-align: center;
+    }
+    
+    [data-component="slideshow-3"] .slide.active {
+        display: block;
+    }
+
+    .slide img {
+        max-width: 100%;
+    }
+
+    .history {
+        max-width: 800px;
+        background-color: var(--accent-g);
+        color: var(--accent-w);
+        padding: 64px;
+        margin: 0 auto;
+        border-radius: 30px;
+    }
+
+    .history .h-content .img-div img {
+        width: 300px;
+        max-width: 100%;
+    }
+
+    .f-left {
+        float: left;
+        margin: 8px 16px 8px 0;
+    }
+    
+    .f-right {
+        float: right;
+        margin: 8px 0 8px 16px;
+    }
+}
+
+/* ----- desktop view (50 em) -------------------------- */
+@media only screen and (min-width: 50em) { 
+
+    .events-sec {
+        margin: 40px auto;
+    }
+
+}

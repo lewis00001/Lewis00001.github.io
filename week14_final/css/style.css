@@ -1,0 +1,168 @@
+:root {
+    --h-text: 'Merriweather', serif;
+    --t-text: 'Source Sans Pro', sans-serif;
+    --accent-o: #F09720;
+    --accent-b: #25CAD2;
+    --accent-b-h: #1a8c92;
+    --accent-r: #ED1B33;
+    --accent-g: #343A40;
+    --accent-w: #fff;
+}
+
+* {box-sizing: border-box;}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-top: 15px;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    font-family: var(--h-text);
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-family: var(--t-text);
+    letter-spacing: 0.05em;
+    line-height: 1.5em;
+}
+
+.hidden {
+    display: none;
+}
+
+.page-title {
+    text-align: center;
+}
+
+.hero-img {
+    position: relative;
+}
+
+.hero-img picture img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.hero-img h1 {
+    color: white;
+    width: 300px;
+    height: 55px;
+    border-radius: 16px;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-shadow: 10px 0px 10px black;
+}
+
+.address-sec {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    background-color: var(--accent-g);
+}
+
+.contact {
+    width: 100%;
+    display: block;
+    color: var(--accent-w);
+    letter-spacing: 0.1em;
+    line-height: 1.3em;
+}
+
+.contact-inner {
+    width: 220px;
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.social {
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+}
+
+.social a i {
+    margin-right: 10px;
+    font-size: 35px;
+    color: var(--accent-b);
+}
+
+.address h2 {
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+.map {
+    padding: 16px;
+}
+
+.map iframe {
+    display: block;
+    width: 100%; 
+    height: 300px;
+    border: 0;
+}
+
+.attribution-page-sec {
+    max-width: 800px;
+    margin: 40px auto 80px auto;
+    padding: 14px;
+}
+
+.attribution-page-sec h2 {
+    color: var(--accent-b-h);
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.attribution-page-sec h3 {
+    color: var(--accent-g);
+    font-weight: 600;
+    text-align: left;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+/* ----- tablet view (36 em) -------------------------- */
+@media only screen and (min-width: 36em) {
+
+    .address-sec {
+        flex-direction: row;
+    }
+
+    .map {
+        min-width: 50%;
+    }
+    
+    .map iframe {
+        height: 400px;
+    }
+}

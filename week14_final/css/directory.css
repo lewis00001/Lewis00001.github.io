@@ -1,0 +1,167 @@
+:root {
+    --h-text: 'Merriweather', serif;
+    --t-text: 'Source Sans Pro', sans-serif;
+    --accent-o: #F09720;
+    --accent-b: #25CAD2;
+    --accent-b-h: #1a8c92;
+    --accent-r: #ED1B33;
+    --accent-g: #343A40;
+    --accent-w: #fff;
+}
+
+.toggle-biz {
+    display: none;
+}
+
+/* cards view */
+
+.card-output-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.biz-data-card {
+    width: 280px;
+    padding: 16px;
+    background-color: var(--accent-g);
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    color: var(--accent-w);
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+}
+
+.biz-data-card .img {
+    margin: 0 auto;
+}
+
+.biz-data-card .biz-info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.biz-data-card .biz-info .name {
+    font-size: 22px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+
+.button a {
+    text-decoration: none;
+    color: var(--accent-g);
+    font-weight: 700;
+    font-family: var(--t-text);
+}
+
+.button a div {
+    width: 160px;
+    border: 1px solid var(--accent-g);
+    text-align: center;
+    margin: 15px auto 0 auto;
+    padding: 4px;
+    background-color: var(--accent-o);
+}
+
+.button a div:hover {
+    border: 1px solid var(--accent-w);
+    color: var(--accent-w);
+}
+
+/* ----- tablet view (36 em) -------------------------- */
+@media only screen and (min-width: 36em) { 
+
+    .toggle-biz {
+        margin-bottom: 16px;
+        margin-left: 4px;
+    }
+
+    .toggle-biz .active {
+        background-color: var(--accent-b);
+    }
+    
+    .round-left {
+        border-radius: 12px 0 0 12px;
+    }
+    
+    .round-right {
+        border-radius: 0 12px 12px 0;
+    }
+    
+    .toggle-biz {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .b-button {
+        font-family: var(--t-text);
+        font-weight: 700;
+        text-align: center;
+        cursor: pointer;
+        width: 80px;
+        padding: 6px;
+        background-color: lightgray;
+    }
+    
+    .b-button:hover {
+        background-color: var(--accent-b)
+    }
+
+    /* list view */
+
+    .card-output-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .biz-data-list {
+        width: 100%;
+        padding: 16px;
+        background-color: var(--accent-g);
+        margin-bottom: 16px;
+        display: flex;
+        flex-direction: row;
+        color: var(--accent-w);
+        letter-spacing: 0.1em;
+        line-height: 1.2em;
+    }
+
+    .biz-data-list .biz-info {
+        padding-left: 12px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .biz-data-list .biz-info div {
+        width: 260px;
+    }
+
+    .biz-data-list .img {
+        width: 100px;
+        margin: 0;
+    }
+
+    .biz-data-list .img img {
+        width: 75px;
+        height: 75px;
+        object-fit: cover;
+    }
+
+    .biz-data-list .biz-info div .name {
+        font-size: 22px;
+        padding-bottom: 6px;
+        padding-top: 6px;
+    }
+}
+
+/* ----- desktop view (50 em) -------------------------- */
+@media only screen and (min-width: 50em) { 
+
+
+}
